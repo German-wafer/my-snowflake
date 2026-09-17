@@ -1,7 +1,17 @@
 const globe = document.querySelector("#globe");
 const button = document.querySelector("#shake");
 const message = document.querySelector("#message");
+const noteInput = document.querySelector("#user-note");
+const addNoteBtn = document.querySelector("#add-note");
 
+
+addNoteBtn.addEventListener("click", () => {
+  if (noteInput.value.trim() !== "") {
+    messages.push(noteInput.value.trim());
+    noteInput.value = "";
+    alert("Your note was added to the globe!");
+  }
+});
 
 const messages = [
   "you are someone's favourite person to sit next to.",
@@ -25,31 +35,31 @@ const messages = [
 ];
 
 button.addEventListener("click", () => {
-    
+
   globe.classList.add("shaking");
   setTimeout(() => globe.classList.remove("shaking"), 600);
- 
+
   const pick = Math.floor(Math.random() * messages.length);
   message.textContent = messages[pick];
+
+  createSnowflakes(50);
 });
 
 function createSnowflakes(count = 20) {
-    const existingFlakes = document.querySelectorAll(".snowflake");
-    existingFlakes.forEach(flake => flake.remove())
-    for (let i = 0; i < count; i++){
-        const flake = document.createElement("div");
-        flake.classList.add("snowflake");
+  const existingFlakes = document.querySelectorAll(".snowflake");
+  existingFlakes.forEach(flake => flake.remove())
+  for (let i = 0; i < count; i++) {
+    const flake = document.createElement("div");
+    flake.classList.add("snowflake");
 
-        flake.style.left = `${Math.random() * 80 + 10}%`;
-        flake.style.animationDuration = `${2+ Math.random() * 3}s`;
-        flake.style.animationDelay = `${Math.random()*2}s`;
-        flake.style.opacity = Math.random();
+    flake.style.left = `${Math.random() * 80 + 10}%`;
+    flake.style.animationDuration = `${2 + Math.random() * 3}s`;
+    flake.style.animationDelay = `${Math.random() * 2}s`;
+    flake.style.opacity = Math.random();
 
-        const shapes = ["•", "❄", "✦", "✧"];
-        flake.textContent = shapes[Math.floor(Math.random()* shapes.length)];
+    const shapes = ["•", "❄", "✦", "✧"];
+    flake.textContent = shapes[Math.floor(Math.random() * shapes.length)];
 
-        document.body.appendChild(flake);
-    }
+    document.body.appendChild(flake);
+  }
 }
-
-createSnowflakes(50);
