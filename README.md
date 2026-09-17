@@ -31,7 +31,7 @@ This project was built as a creative, interactive web experience designed to bri
 
 ---
 
-## ⚡ Credits & Acknowledgments
+## Credits & Acknowledgments
 
-* Tutorial by [Hack Club](https://snowglobe.hackclub.com/html-css-js)
+* Tutorial by [Hack Club (Snowglobe)](https://snowglobe.hackclub.com/html-css-js)
 * Built and customized by **Hana** (@Hana)
