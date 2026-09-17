@@ -4,7 +4,7 @@ A cozy, interactive web app that lets you shake a virtual snowglobe to receive a
 
 ---
 
-## 📖 Project Description
+##  Project Description
 
 This project was built as a creative, interactive web experience designed to bring a little positivity into someone's day. It was built following the [Hack Club Snowglobe Tutorial](https://snowglobe.hackclub.com/html-css-js) and expanded with custom features like personalized note additions and full-screen glowing snowfall.
 
@@ -15,7 +15,7 @@ This project was built as a creative, interactive web experience designed to bri
 
 ---
 
-## 🚀 How to Use It
+##  How to Use It
 
 1. Open `index.html` in any modern web browser.
 2. Click the **"shake the globe"** button to shake the globe and display a random message of encouragement.
@@ -23,7 +23,7 @@ This project was built as a creative, interactive web experience designed to bri
 
 ---
 
-## 💡 Features & Highlights
+##  Features & Highlights
 
 * **Interactive Full-Screen Snowfall**: Fresh, glowing snowflakes generate dynamically and drift down across the entire screen.
 * **Custom Note Input**: Visitors can personalize the project by appending their own notes to the message queue.
