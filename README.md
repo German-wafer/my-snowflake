@@ -27,7 +27,6 @@ This project was built as a creative, interactive web experience designed to bri
 
 * **Interactive Full-Screen Snowfall**: Fresh, glowing snowflakes generate dynamically and drift down across the entire screen.
 * **Custom Note Input**: Visitors can personalize the project by appending their own notes to the message queue.
-* **Responsive & Glowing Styling**: A soft pastel color palette with glowing snowflake text effects. (Clicking the **"shake the globe"** button resets the Snow animation)
 
 ---
 
